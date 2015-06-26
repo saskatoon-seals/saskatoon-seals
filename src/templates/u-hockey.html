@@ -1,0 +1,101 @@
+{% extends "base.html" %}
+{% set active_page = active_page|default('u-hockey') %}
+
+{% block content %}
+
+
+    <section class="intro u-hockey-intro">
+        <div class="container wide">
+            <div class="row">
+                <div class="col-wider text-left valign-middle">
+                    <h1>Let us introduce you to the beauty of the mysterious sport called underwater hockey</h1>
+                </div>
+                <div class="col-narrower valign-middle"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="break">
+    <div class="container" id="our-team">
+        <ul class="nav-pills hidden-xs">
+            <li><a href="http://www.cmas.org/events" data-filter="all">World Championships - CMAS</a></li>
+            <li><a href="http://www.cuga.org/index.php/en/" data-filter="bop">Canadian Underwater Games Association - CUGA</a></li>
+            <li><a href="http://www.cuga.org/index.php/en/uwhmenu/uwhtournaments" data-filter="des">Upcoming tournaments in Canada</a></li>
+            <li><a href="http://en.wikipedia.org/wiki/Underwater_sports" data-filter="des">Other underwater sports</a></li>
+        </ul>
+    </div>
+    </section>
+
+
+        <div class="container wide">
+            <div class="row">
+                <div class="col-twothirds valign-middle">
+                    <h2>What is underwater hockey?</h2>
+                    <p>
+                        Underwater Hockey (UWH), (also called Octopush (mainly in the UK)) is a globally played limited-contact
+                        sport in which two teams compete to manoeuvre a puck across the bottom of a swimming pool into the
+                        opposing team's goal by propelling it with a pusher. It originated in England in 1954 when Alan Blake,
+                        the founder of the newly formed Southsea Sub-Aqua Club, invented the game he called Octopush as a means
+                        of keeping the club's members interested and active over the cold winter months when open-water diving lost
+                        its appeal.[1] Underwater Hockey is now played worldwide, with CMAS as the world governing body.[2] The
+                        first Underwater Hockey World Championship was held in Canada in 1980 after a false start in 1979 brought
+                        about by international politics and apartheid.
+                    </p>
+                </div>
+                <div class="col-third valign-middle text-center">
+                    <img src="/static/images/u-hockey/u-hockey-3b.jpg">
+                </div>
+            </div>
+        </div>
+
+
+
+    <section class="break">
+        <div class="container wide">
+            <div class="row">
+                <div class="col-third valign-middle text-center">
+                    <img src="/static/images/u-hockey/u-hockey-4.png">
+                </div>
+                <div class="col-twothirds valign-middle">
+                    <h2>Rules of play and equipment</h2>
+                    <p>
+                        Before the start of play the puck is placed in the middle of the pool, and the players wait in the
+                        water whilst touching the wall above the goal they are defending. At the start-of-play signal
+                        (usually a buzzer or a gong) in-play members of both teams are free to swim anywhere in the play
+                        area and try to score by manoeuvring the puck into the opponents' goal. Players hold their breath[4][5]
+                        as they dive to the bottom of the pool (a form of dynamic apnoea, as in free-diving).
+                    </p>
+                    <h3>Underwater hockey player is wearing:</h3>
+                    <ol>
+                        <li>Snorkel and mouthguard</li>
+                        <li>Hat with earguards</li>
+                        <li>Mask</li>
+                        <li>Fins</li>
+                        <li>Stick</li>
+                        <li>Puck</li>
+                        <li>Glove</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="intro u-hockey-videos">
+        <div class="container video-wide">
+            <h2>Underwater hockey - the toughest sport there is.. It's a pleasure to introduce it to you!</h2>
+            <div class="row">
+                <div class="half-page text-left valign-middle">
+
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/2KZYi3Wh9l8" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="half-page text-right valign-middle">
+
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/-ylBLd3bQlc"
+                            frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+{% endblock %}

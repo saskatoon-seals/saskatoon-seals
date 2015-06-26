@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Saskatoon Seals</title>
+    <script src="//www.cdnstyles.com/static/js/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
+    <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="{{ '/static/css/vstyles_BACKUP.css' }}" />
+    {% block head %}{% endblock %}
+</head>
+
+<body>
+    <!--<nav class="site-header" id="main-nav">-->
+        <!--<div class="container">-->
+        <!--<div class="header-bar">-->
+            <!--<h1>Ales</h1>-->
+        <!--</div>-->
+            <!--</div>-->
+    <!--</nav>-->
+
+    <main>
+        {% set navigation_bar = [
+            ('/u-hockey', 'u-hockey', 'U-Hockey', 'u-hockey-icon'),
+            ('/u-football', 'u-football', 'U-Football', 'u-football-icon'),
+            ('/team', 'team', 'Team', 'team-icon'),
+            ('/gallery', 'gallery', 'Gallery', 'gallery-icon'),
+            ('/calendar', 'calendar', 'Schedule and Events', 'schedule-icon'),
+            ('/contact', 'contact', 'Contact', 'contacts-icon')
+        ] -%}
+
+        <nav class="sub-nav company-nav">
+            <div class="container">
+                {% for link, id, name, icon in navigation_bar %}
+                    <div {% if id == active_page %} class="active" {% endif %} >
+                        <a href="{{ link }}">
+                            <span class="{{ icon }}"></span>
+                            {{name}}
+                        </a>
+                    </div>
+                {% endfor %}
+            </div>
+        </nav>
+
+        {% block content %}{% endblock %}
+
+        <footer id="footer" class="site-footer">
+            <div class="container clearfix">
+                <ul>
+                    <li class="footer-title">We play in YMCA on</li>
+                    <li>Mondays: 8pm - 9pm</li>
+                    <li>Thursdays: 8pm - 9pm</li>
+                    <li>Fridays: 8pm - 9pm</li>
+                </ul>
+                <ul>
+                    <li class="footer-title">Contact information</li>
+                    <li>Jacques Touplin, (306) 281-7221</li>
+                    <li>Ales Ursic, (306) 281-5383</li>
+                    <li>saskatoon.seals@gmail.com</li>
+                </ul>
+                <ul>
+                    <li class="footer-title">Follow us</li>
+                    <li><a href="#">
+                        <span class="facebook-icon-small">
+                        Facebook</span></a>
+                    </li>
+                    <li><a href="#">
+                        <span class="twitter-icon-small">
+                        Twitter</span></a>
+                    </li>
+                </ul>
+                <img src="/static/icons/seals-logo.JPG" alt="Seals Logo" style="height: 100px;">
+            </div>
+        </footer>
+
+    </main>
+
+</body>
+</html>

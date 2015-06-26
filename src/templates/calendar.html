@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% set active_page = active_page|default('calendar') %}
+
+
+{% block content %}
+    <section class="break">
+        <div class="container">
+            <h1>Training sessions, tournaments and other events.</h1>
+            <iframe src="https://www.google.com/calendar/embed?src=saskatoon.seals%40gmail.com&ctz=America/Regina"
+                style="border: 0" width="800" height="600" frameborder="0" scrolling="no">
+            </iframe>
+        </div>
+    </section>
+{% endblock %}
